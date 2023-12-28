@@ -72,8 +72,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
-#to install react project 
+### to install react project 
+
 npx create-react-app . //. for current directory or you can put your dir name here
 
-#to start application
+### to start application
+
+
 npm start
