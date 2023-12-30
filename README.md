@@ -69,7 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-
+### ----------------------------------------------------------------------
 
 
 ### to install react project 
@@ -80,3 +80,24 @@ npx create-react-app . //. for current directory or you can put your dir name he
 
 
 npm start
+
+
+### create a new repository on the command line
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/peeyushs16/learn_react.git
+git push -u origin master
+
+
+### or push an existing repository from the command line
+git remote add origin https://github.com/peeyushs16/learn_react.git
+git branch -M master
+git push -u origin master
+
+
+
+### For adding routing
+
+npm install react-router-dom
