@@ -26,14 +26,14 @@ function App() {
             <Route path="/" exact element={<JobDetail name="Peeyush" salary={20000} position="PHP Dev" company="Konceive" />}  />
             <Route path="/TextForm" exact element={<TextForm />}  />
             <Route path="/NewsFunc" exact element={<NewsFunc api_key={api_key} setProgress={setProgress} key="general" country="in" pagesize={pageSize} category="general" />}  />
-            {/* <Route path="/NewsScroll" exact element={<NewsScroll api_key={api_key} setProgress={setProgress} key="general" country="in" pagesize={pageSize} category="general" />}  />
+            <Route path="/NewsScroll" exact element={<NewsScroll api_key={api_key} setProgress={setProgress} key="general" country="in" pagesize={pageSize} category="general" />}  />
             <Route path="/News" exact element={<News  setProgress={setProgress} key="general" country="in" pagesize={pageSize} category="general" />}  />
             <Route path="/news/business" exact element={<News  setProgress={setProgress} key="business" country="in" pagesize={pageSize} category="business" />}  />
             <Route path="/news/entertainment" exact element={<News  setProgress={setProgress} key="entertainment" country="in" pagesize={pageSize} category="entertainment" />}  />
             <Route path="/news/health" exact element={<News  setProgress={setProgress} key="health" country="in" pagesize={pageSize} category="health" />}  />
             <Route path="/news/science" exact element={<News  setProgress={setProgress} key="science" country="in" pagesize={pageSize} category="science" />}  />
             <Route path="/news/sports" exact element={<News  setProgress={setProgress} key="sports" country="in" pagesize={pageSize} category="sports" />}  />
-            <Route path="/news/technology" exact element={<News  setProgress={setProgress} key="technology" country="in" pagesize={pageSize} category="technology" />}  /> */}
+            <Route path="/news/technology" exact element={<News  setProgress={setProgress} key="technology" country="in" pagesize={pageSize} category="technology" />}  />
           </Routes> 
         
       </div>
