@@ -101,3 +101,12 @@ git push -u origin master
 ### For adding routing
 
 npm install react-router-dom
+
+
+### react infinite scroll
+
+npm i react-infinite-scroll-component
+
+### react top load bar
+
+npm i react-top-loading-bar
