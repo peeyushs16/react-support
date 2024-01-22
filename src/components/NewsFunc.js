@@ -10,7 +10,6 @@ const NewsFunc = (props)=>{
     const [loading, setLoading] = useState(true)
     const [page, setPage] = useState(1)
     const [totalResults, setTotalResults] = useState(0)
-    // document.title = `${capitalizeFirstLetter(props.category)} - NewsMonkey`;
     
     const capitalizeFirstLetter = (string) => {
         return string.charAt(0).toUpperCase() + string.slice(1);
@@ -32,19 +31,10 @@ const NewsFunc = (props)=>{
     }
 
     useEffect(() => {
+        document.title = `${capitalizeFirstLetter(props.category)} - NewsMonkey`;
         updateNews(); 
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
- 
-
-    const handlePrevClick = async () => {
-        setPage(page-1)
-        updateNews();
-    }
-
-    const handleNextClick = async () => { 
-        setPage(page+1)
-        updateNews()
-    }
 
     const fetchMoreData = async () => {   
         const nextPage = page + 1;
@@ -60,7 +50,7 @@ const NewsFunc = (props)=>{
  
         return (
             <>
-                <h1 className="text-center" style={{ margin: '35px 0px' }}>NewsMonkey - Top {capitalizeFirstLetter(props.category)} Headlines</h1>
+                <h1 className="text-center" style={{ margin: '80px 0px 30px 0px' }}>NewsMonkey - Top {capitalizeFirstLetter(props.category)} Headlines</h1>
                 {loading && <Loading />}
                 <InfiniteScroll
                     dataLength={articles.length}
